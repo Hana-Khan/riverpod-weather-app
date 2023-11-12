@@ -47,3 +47,16 @@ Map<String, dynamic> _$WeatherToJson(Weather instance) => <String, dynamic>{
       'predictability': instance.predictability,
     };
 
+const _$WeatherStateEnumMap = {
+  WeatherState.snow: 'sn',
+  WeatherState.sleet: 'sl',
+  WeatherState.hail: 'h',
+  WeatherState.thunderstorm: 't',
+  WeatherState.heavyRain: 'hr',
+  WeatherState.lightRain: 'lr',
+  WeatherState.showers: 's',
+  WeatherState.heavyCloud: 'hc',
+  WeatherState.lightCloud: 'lc',
+  WeatherState.clear: 'c',
+  WeatherState.unknown: 'unknown',
+};
