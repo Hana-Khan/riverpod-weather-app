@@ -27,3 +27,23 @@ Weather _$WeatherFromJson(Map<String, dynamic> json) => Weather(
       visibility: (json['visibility'] as num).toDouble(),
       predictability: json['predictability'] as int,
     );
+
+Map<String, dynamic> _$WeatherToJson(Weather instance) => <String, dynamic>{
+      'id': instance.id,
+      'weatherStateName': instance.weatherStateName,
+      'weatherStateAbbr': _$WeatherStateEnumMap[instance.weatherStateAbbr]!,
+      'windDirectionCompass':
+          _$WindDirectionCompassEnumMap[instance.windDirectionCompass]!,
+      'created': instance.created.toIso8601String(),
+      'applicableDate': instance.applicableDate.toIso8601String(),
+      'minTemp': instance.minTemp,
+      'maxTemp': instance.maxTemp,
+      'theTemp': instance.theTemp,
+      'windSpeed': instance.windSpeed,
+      'windDirection': instance.windDirection,
+      'airPressure': instance.airPressure,
+      'humidity': instance.humidity,
+      'visibility': instance.visibility,
+      'predictability': instance.predictability,
+    };
+
