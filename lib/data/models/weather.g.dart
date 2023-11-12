@@ -60,3 +60,15 @@ const _$WeatherStateEnumMap = {
   WeatherState.clear: 'c',
   WeatherState.unknown: 'unknown',
 };
+
+const _$WindDirectionCompassEnumMap = {
+  WindDirectionCompass.north: 'N',
+  WindDirectionCompass.northEast: 'NE',
+  WindDirectionCompass.east: 'E',
+  WindDirectionCompass.southEast: 'SE',
+  WindDirectionCompass.south: 'S',
+  WindDirectionCompass.southWest: 'SW',
+  WindDirectionCompass.west: 'W',
+  WindDirectionCompass.northWest: 'NW',
+  WindDirectionCompass.unknown: 'unknown',
+};
