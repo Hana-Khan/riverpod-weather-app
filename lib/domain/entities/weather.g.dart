@@ -10,3 +10,8 @@ Temperature _$TemperatureFromJson(Map<String, dynamic> json) => Temperature(
       value: (json['value'] as num).toDouble(),
     );
 
+Map<String, dynamic> _$TemperatureToJson(Temperature instance) =>
+    <String, dynamic>{
+      'value': instance.value,
+    };
+
