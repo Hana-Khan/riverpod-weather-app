@@ -31,3 +31,17 @@ Weather _$WeatherFromJson(Map<String, dynamic> json) => Weather(
       date: DateTime.parse(json['date'] as String),
     );
 
+Map<String, dynamic> _$WeatherToJson(Weather instance) => <String, dynamic>{
+      'condition': instance.condition,
+      'lastUpdated': instance.lastUpdated.toIso8601String(),
+      'location': instance.location,
+      'temperature': instance.temperature,
+      'weatherStateAbr': instance.weatherStateAbr,
+      'minTemp': instance.minTemp,
+      'maxTemp': instance.maxTemp,
+      'windSpeed': instance.windSpeed,
+      'windDirection': instance.windDirection,
+      'humidity': instance.humidity,
+      'airPressure': instance.airPressure,
+      'date': instance.date.toIso8601String(),
+    };
