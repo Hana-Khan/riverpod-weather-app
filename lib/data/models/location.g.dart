@@ -13,6 +13,13 @@ Location _$LocationFromJson(Map<String, dynamic> json) => Location(
       woeid: json['woeid'] as int,
     );
 
+Map<String, dynamic> _$LocationToJson(Location instance) => <String, dynamic>{
+      'title': instance.title,
+      'locationType': _$LocationTypeEnumMap[instance.locationType]!,
+      'latt_long': const LatLngConverter().toJson(instance.latLng),
+      'woeid': instance.woeid,
+    };
+
 const _$LocationTypeEnumMap = {
   LocationType.city: 'City',
   LocationType.region: 'Region',
