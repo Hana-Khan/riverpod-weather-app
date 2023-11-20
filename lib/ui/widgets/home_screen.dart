@@ -7,8 +7,8 @@ import 'package:intl/intl.dart';
 import 'package:riverpod_weather_app/domain/entities/weather.dart';
 import 'package:riverpod_weather_app/provider/weather_provider.dart';
 import 'package:riverpod_weather_app/provider/weather_state.dart';
-import 'package:riverpod_weather_app/ui/city_search.dart';
-import 'package:riverpod_weather_app/ui/settings.dart';
+import 'package:riverpod_weather_app/ui/city_search_screen.dart';
+import 'package:riverpod_weather_app/ui/settings_screen.dart';
 
 
 class HomeScreen extends HookConsumerWidget {
